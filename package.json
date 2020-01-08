@@ -1,18 +1,24 @@
 {
-  "name": "frontend-project-lvl1",
+  "name": "frontend-project-lvl1-duck",
   "version": "1.0.0",
   "description": "",
-  "main": "babel.config.js",
+  "author": "magic_duck",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saintsloth/frontend-project-lvl1.git"
+    "url": "git+https://github.com/saintsloth/frontend-project-lvl1-duck.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saintsloth/frontend-project-lvl1/issues"
+    "url": "https://github.com/saintsloth/frontend-project-lvl1-duck/issues"
   },
-  "homepage": "https://github.com/saintsloth/frontend-project-lvl1#readme",
+  "homepage": "https://github.com/saintsloth/frontend-project-lvl1-duck#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
@@ -20,7 +26,7 @@
     "@babel/preset-env": "^7.7.7"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir dist --source-maps",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   }
 }
